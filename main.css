@@ -1,0 +1,203 @@
+@font-face {
+    font-family: Comfortaa;
+    src: url(Comfortaa-VariableFont_wght.ttf);
+}
+
+body{
+    margin: 0;
+    background-color: rgb(245, 245, 245);
+    font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #147493ff;
+}
+
+/*Navigation Bar Section*/
+/*--------------------------------*/
+nav{
+    background: rgb(219, 219, 219);
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: sticky;
+}
+
+
+#navDiv{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#navDiv>a{
+    text-decoration: none;
+}
+
+#hamburgerButton{
+display: none;
+}
+
+
+#logoHamburger{
+    display: flex;
+    flex-direction: row;
+}
+
+.navButton{
+    border: none;
+    background-color: transparent;
+    font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    min-height: 80%;
+    border-radius: 20px;
+    transition: .2s;
+    padding: 8px;
+    color: #147493ff;
+}
+
+.navButton:hover{
+    background: #36b9cdff;
+    color: white;
+}
+
+#logo{
+    margin-left: 15px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+/*--------------------------------*/
+
+/*Intro Section*/
+/*--------------------------------*/
+#intro{
+    margin: 10px;
+    border-top: solid #2689e4ff 4vw;
+    border-left: solid #2689e4ff 4vw;
+    border-bottom: solid #075093ff 4vw;
+    border-right: solid #075093ff 4vw;
+    font-size: calc(10px + 2vw);
+}
+
+#name{
+    font-size: 10vw;
+    margin: 0;
+}
+
+/*--------------------------------*/
+
+/*Project Containers -------------*/
+#projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 1200px;
+}
+
+.projectRow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.projectItem{
+    height: 210px;
+    width: 210px;
+    margin: 5px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.projectItem:hover{
+    background-color: rgb(219, 219, 219);
+}
+
+.projectItem>p{
+    margin: 0;
+    margin-top: 5px;
+}
+/*--------------------------------*/
+
+/*Icons---------------------------*/
+i{
+    color: #2689e4ff;
+}
+/*--------------------------------*/
+
+/*Footer Section -----------------*/
+footer{
+    background-color: #075093ff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+footer>div{
+    display: flex;
+    flex-direction: row;
+    min-width: 20%;
+    align-items: center;
+}
+
+.whiteLink{
+    color: white;
+}
+
+/*--------------------------------*/
+
+@media only screen and (max-width: 1000px) {
+    nav{
+        flex-direction: column;
+    }
+    #hamburgerButton{
+        display: flex;
+        align-items: center;
+    }
+    #navDiv{
+        flex-direction: column;
+        justify-content: center;
+        display: none;
+        margin-bottom: 10px;
+    }
+    #logoHamburger{
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    #logo{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+#projects{
+    flex-direction: column;
+}
+.projectRow{
+    flex-direction: row;
+}
+}
+
+@media only screen and (max-width: 900px) {
+#projects{
+    margin-top: 1600px;
+    margin-bottom: 1600px;
+}
+.projectRow{
+    flex-direction: column;
+}
+}
